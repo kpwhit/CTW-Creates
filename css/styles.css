@@ -43,14 +43,14 @@ body {
 
 #toggle-btn {
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 330px;
 }
 
 
 #sidebar {
     position: absolute;
-    /* top: 30px; */
+    top: 0;
     left: -300px;
     background-color: white;
     width: 300px;
@@ -74,10 +74,19 @@ body {
 }
 
 #sidebar.active {
-    left: 0
+    left: 0;
 }
 
 
-.content {
+.main-content {
+    display: flex;
     background-color: yellowgreen;
+}
+
+.main-content div {
+    width: 50%;
+}
+
+img {
+    width: 100%;
 }
