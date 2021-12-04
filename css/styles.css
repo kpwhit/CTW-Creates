@@ -6,7 +6,7 @@ body {
 
 .grid-layout {
     display: grid;
-    grid-template-rows: 120px max-content;
+    grid-template-rows: 140px max-content;
 }
 
 .header {
@@ -15,6 +15,7 @@ body {
     align-items: center;
     /* background-color: yellow; */
     border-bottom: solid black 2px;
+    margin-bottom: 20px;
 }
 
 .icon {
@@ -80,13 +81,62 @@ body {
 
 .main-content {
     display: flex;
-    background-color: yellowgreen;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.main-content div {
-    width: 50%;
+.about-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
 
-img {
-    width: 100%;
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-flow: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 20px 20px;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: 300ms;
+}
+
+.main-content .card:hover {
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .2);
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 200ms;
+}
+
+a:hover {
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2rem;
+}
+
+.footer {
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
 }
