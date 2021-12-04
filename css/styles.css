@@ -140,3 +140,22 @@ h2 {
 p {
     font-size: 1.5rem;
 }
+
+.flex-form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+fieldset {
+    width: 80vw;
+}
+
+legend {
+    font-family: 'Architects Daughter', cursive;
+}
+
+textarea {
+    width: 80vw;
+    max-width: 80vw;
+}
