@@ -11,26 +11,23 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    /* background-color: yellow; */
     border-bottom: solid black 2px;
     margin-bottom: 20px;
 }
 
 .icon {
     transform: rotate(15deg);
-    margin-left: 20px;
 }
 
 .logo {
     text-align: center;
-    margin-left: 100px;
 }
 
 .logo1 {
     font-family: 'Meow Script', cursive;
-    font-size: 48pt;
+    font-size: 48px;
 }
 
 .logo2 {
@@ -45,16 +42,16 @@ body {
 #toggle-btn {
     position: absolute;
     top: 50px;
-    left: 330px;
+    left: 380px;
 }
 
 
 #sidebar {
     position: absolute;
     top: 0;
-    left: -300px;
+    left: -350px;
     background-color: white;
-    width: 300px;
+    width: 350px;
     height: 100vh;
     transition: 400ms;
 }
@@ -113,8 +110,8 @@ body {
 }
 
 .card img {
-    width: 25rem;
-    height: 25rem;
+    width: 70vw;
+    height: 70vw;
     object-fit: cover;
 }
 
@@ -158,4 +155,31 @@ legend {
 textarea {
     width: 80vw;
     max-width: 80vw;
+}
+
+@media screen and (min-width: 800px) {
+    .main-content {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    /* .card {
+        width: 200px;
+        height: 200px;
+    } */
+
+    .card img {
+        width: 40vw;
+        height: 40vw;
+        object-fit: cover;
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .about-content {
+        flex-flow: row wrap
+    }
+
+    
+
 }
