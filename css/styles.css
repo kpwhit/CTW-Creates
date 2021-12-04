@@ -1,0 +1,83 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-rows: 120px max-content;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: yellow; */
+    border-bottom: solid black 2px;
+}
+
+.icon {
+    transform: rotate(15deg);
+    margin-left: 20px;
+}
+
+.logo {
+    text-align: center;
+    margin-left: 100px;
+}
+
+.logo1 {
+    font-family: 'Meow Script', cursive;
+    font-size: 48pt;
+}
+
+.logo2 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 24pt;
+}
+
+.logo > a {
+    text-decoration: none;color: inherit;
+}
+
+#toggle-btn {
+    position: absolute;
+    top: 45px;
+    left: 330px;
+}
+
+
+#sidebar {
+    position: absolute;
+    /* top: 30px; */
+    left: -300px;
+    background-color: white;
+    width: 300px;
+    height: 100vh;
+    transition: 400ms;
+}
+
+#sidebar ul li {
+    font-family: 'Architects Daughter', cursive;    list-style: none;
+    font-size: 36px;
+    padding: 20px 20px;
+}
+
+#toggle-btn span {
+    width: 30px;
+    height: 2.4px;
+    background: #000;
+    display: block;
+    margin-top: 5px;
+    border-radius: 25px;
+}
+
+#sidebar.active {
+    left: 0
+}
+
+
+.content {
+    background-color: yellowgreen;
+}
