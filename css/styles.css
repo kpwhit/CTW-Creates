@@ -27,7 +27,8 @@ body {
 
 .logo1 {
     font-family: 'Meow Script', cursive;
-    font-size: 48px;
+    font-size: 75px;
+    padding-right: 10px;
 }
 
 .logo2 {
@@ -43,6 +44,7 @@ body {
     position: absolute;
     top: 50px;
     left: 380px;
+    cursor: pointer;
 }
 
 
@@ -157,16 +159,35 @@ textarea {
     max-width: 80vw;
 }
 
+#menu-bar {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Architects Daughter', cursive;    list-style: none;
+    font-size: 36px;
+    padding: 10px 10px;
+    border-bottom: solid black 2px;
+}
+
+@media screen and (max-width: 800px) {
+    #menu-bar {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 800px) {
     .main-content {
         flex-flow: row wrap;
         justify-content: space-evenly;
     }
-
-    /* .card {
-        width: 200px;
-        height: 200px;
-    } */
+    
+    .header {
+        border-bottom: none;
+        margin-bottom: 0px;
+    }
+    
+    #sidebar {
+        display: none;
+    }
 
     .card img {
         width: 40vw;
